@@ -30,7 +30,7 @@ Jeu avec une boucle, jusqu'à la bonne réponse et numéro réponse aléatoire
 import random
 n = random.randint(1,50)
 
-while 1:
+while True:
     nombre = int(input("tape un chiffre \n"))
     if nombre == n:
         print("Tu as gagné")
