@@ -6,8 +6,7 @@ Si elle est multiple de 4, on regarde si elle est multiple de 100.
         Sinon, elle n'est pas bissextile.
     Sinon, elle est bissextile."""
 an = int(input("Veux tu savoir si une année est bissextile ?\n"))
-if an %4 == 0 and an %100 == 0:
-    if an %400 == 0:
-        print(an,"est une année bissextile.")
+if an %400 == 0 or (an %4 == 0 and an %100 != 0):
+    print(an,"est une année bissextile.")
 else:
     print(an,"n'est pas une année bissextile.")
