@@ -4,7 +4,7 @@ selon le choix de l'utilisateur, il aura droit à 10, 5 ou 3 essais
 """
 
 """
-Mise en place du nombre aléatoire pour le jeu
+Mise en place du nombre aléatoire à trouver
 """
 import random
 n = random.randint(1,50)
@@ -19,8 +19,12 @@ while True:#boucle afin d'être sûr de choisir un niveau = à 1, 2 ou 3
     if level < 1 or level > 3:#Limitation du choix de diffculté à 1, 2 ou 3
         print("Il y a eu une erreur lors de la saisie du niveau")
     else:
-        print("votre niveau de difficulté est,level")
+        print("votre niveau de difficulté est",level)
         break
+"""
+détermine le nombre d'essai en fonction du choix user
+"""
+
 while True:
     nombre = int(input("Devine le chiffre\n"))
     if nombre == n or nombre != n:
