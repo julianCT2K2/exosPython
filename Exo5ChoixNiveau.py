@@ -21,8 +21,6 @@ while True:#boucle afin d'être sûr de choisir un niveau = à 1, 2 ou 3
     else:
         print("votre niveau de difficulté est,level")
         break
-
-
 while True:
     nombre = int(input("Devine le chiffre\n"))
     if nombre == n or nombre != n:
