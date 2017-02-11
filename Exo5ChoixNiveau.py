@@ -28,7 +28,7 @@ while True:
         break
     else:
         print("Vous avez rentré une mauvaise valeur")
-
+print("Vous avez droit à",nombreEssaiMax,"coups")
 """
 Jeu trouve le chiffre
 """
