@@ -16,14 +16,16 @@ i = 0#variable pour l'affichage du nbre d'essai
 
 
 choix = (input("Veuillez choisir le niveau de difficulté easy, medium ou hard\n"))  # choix du niveau de difficulté
-
-if choix == "easy":
-    nombreEssaiMax = 10
-elif choix == "medium":
-    nombreEssaiMax = 5
+if choix == "easy" or choix == "medium" or choix == "hard":
+    if choix == "easy":
+        nombreEssaiMax = 10
+    elif choix == "medium":
+        nombreEssaiMax = 5
+    else:
+        nombreEssaiMax = 3
+    print("Vous avez le droit à", nombreEssaiMax)
 else:
-    nombreEssaiMax = 3
-print("Vous avez le droit à", nombreEssaiMax)
+    print("Vous avez rentré une mauvaise valeur")
 
 """
 Jeu trouve le chiffre
