@@ -15,18 +15,17 @@ Jeu ou il faut trouver le bon nombre qui a été généré par hasard
 i = 1#variable pour l'affichage du nbre d'essai
 
 
-level = (input("Veuillez choisir le niveau de difficulté easy, medium ou hard\n"))  # choix du niveau de difficulté
-if level == "easy":
-   level = 10
-elif level == "medium":
-   level = 5
+choix = (input("Veuillez choisir le niveau de difficulté easy, medium ou hard\n"))  # choix du niveau de difficulté
+if choix == "easy":
+   nombreDeCoup = 10
+elif choix == "medium":
+    nombreDeCoup = 5
 else:
-   level = 3
+    nombreDeCoup = 3
 
 """
 détermine le nombre d'essai en fonction du choix user
 """
-
 
 """
 Jeu trouve le chiffre
@@ -35,6 +34,9 @@ while True:
     nombre = int(input("Devine le chiffre\n"))
     if nombre == n or nombre != n:
         print("Essai",i)
+        if nombreDeCoup == i
+        print("Tu as perdu")
+        break
     if nombre == n:
         print("Tu as gagné")
         break
