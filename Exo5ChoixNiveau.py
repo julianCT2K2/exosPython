@@ -17,12 +17,12 @@ i = 1#variable pour l'affichage du nbre d'essai
 
 choix = (input("Veuillez choisir le niveau de difficulté easy, medium ou hard\n"))  # choix du niveau de difficulté
 if choix == "easy":
-    nombreSaisi = 10
+    nombreEssaiMax = 10
 elif choix == "medium":
-    nombreSaisi = 5
+    nombreEssaiMax = 5
 else:
-    nombreSaisi = 3
-print("Vous avez le droit à", nombreSaisi)
+    nombreEssaiMax = 3
+print("Vous avez le droit à", nombreEssaiMax)
 """
 détermine le nombre d'essai en fonction du choix user
 """
@@ -32,9 +32,7 @@ Jeu trouve le chiffre
 """
 while True:
     nombre = int(input("Devine le chiffre\n"))
-    print("Il reste", nombreSaisi - i, "coup(s)")
-    if nombre:
-        print("Essai",i)
+    print("Il te reste", nombreEssaiMax - i, "coup(s)","sur",nombreEssaiMax)
     if nombre == nombreADeviner:
         print("Tu as gagné")
         break
@@ -43,6 +41,6 @@ while True:
     else:
         print("Tu es trop bas")
     i += 1
-    if nombreSaisi == i:
+    if nombreEssaiMax == i:
         print("Tu as perdu")
         break
