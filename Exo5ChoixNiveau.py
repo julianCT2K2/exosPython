@@ -27,14 +27,6 @@ while level == 1:
     level = 10
     print(level)
 
-"""while level == 2:
-    level == 5
-    print(level)
-
-while level == 1:
-    level *= 10
-    print(level)"""
-
 while True:
     nombre = int(input("Devine le chiffre\n"))
     if nombre == n or nombre != n:
