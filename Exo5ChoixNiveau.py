@@ -14,16 +14,15 @@ Jeu ou il faut trouver le bon nombre qui a été généré par hasard
 """
 i = 1#variable pour l'affichage du nbre d'essai
 
-while True:#boucle afin d'être sûr de choisir un niveau = à easy, medium ou hard
-    level = (input("Veuillez choisir le niveau de difficulté easy, medium ou hard\n"))  # choix du niveau de difficulté
-    if level == "easy":
-        level = 10
-    elif level == "medium":
-        level = 5
-    else:
-        level = 3
-    break
-print(level)
+
+level = (input("Veuillez choisir le niveau de difficulté easy, medium ou hard\n"))  # choix du niveau de difficulté
+if level == "easy":
+   level = 10
+elif level == "medium":
+   level = 5
+else:
+   level = 3
+
 
 """
 détermine le nombre d'essai en fonction du choix user
