@@ -17,18 +17,18 @@ i = 0#variable pour l'affichage du nbre d'essai
 
 choix = (input("Veuillez choisir le niveau de difficulté easy, medium ou hard\n"))  # choix du niveau de difficulté
 while True:
-        if choix == "easy":
-            nombreEssaiMax = 10
-            break
-        elif choix == "medium":
-            nombreEssaiMax = 5
-            break
-        else:
-            nombreEssaiMax = 3
-            print("Vous avez le droit à", nombreEssaiMax)
+    if choix == "easy":
+        nombreEssaiMax = 10
         break
-        print("Vous avez rentré une mauvaise valeur")
+    elif choix == "medium":
+        nombreEssaiMax = 5
         break
+    elif choix == "hard":
+        nombreEssaiMax = 3
+        print("Vous avez le droit à", nombreEssaiMax)
+        break
+    else:
+    print("Vous avez rentré une mauvaise valeur")
 
 """
 Jeu trouve le chiffre
