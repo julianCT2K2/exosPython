@@ -22,7 +22,7 @@ elif choix == "medium":
     nombreDeCoup = 5
 else:
     nombreDeCoup = 3
-
+print("Vous avez le droit à",nombreDeCoup)
 """
 détermine le nombre d'essai en fonction du choix user
 """
