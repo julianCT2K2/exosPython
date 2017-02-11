@@ -33,11 +33,8 @@ Jeu trouve le chiffre
 while True:
     nombre = int(input("Devine le chiffre\n"))
     print("Il reste", nombreSaisi - i, "coup(s)")
-    if nombre == nombreADeviner:
+    if nombre:
         print("Essai",i)
-        if nombreSaisi == i:
-            print("Tu as perdu")
-            break
     if nombre == nombreADeviner:
         print("Tu as gagné")
         break
@@ -46,3 +43,6 @@ while True:
     else:
         print("Tu es trop bas")
     i += 1
+    if nombreSaisi == i:
+        print("Tu as perdu")
+        break
