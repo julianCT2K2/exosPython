@@ -7,7 +7,7 @@ selon le choix de l'utilisateur, il aura droit à 10, 5 ou 3 essais
 Mise en place du nombre aléatoire à trouver
 """
 import random
-n = random.randint(1,50)
+nombreADeviner = random.randint(1, 50)
 
 """
 Jeu ou il faut trouver le bon nombre qui a été généré par hasard
@@ -17,12 +17,12 @@ i = 1#variable pour l'affichage du nbre d'essai
 
 choix = (input("Veuillez choisir le niveau de difficulté easy, medium ou hard\n"))  # choix du niveau de difficulté
 if choix == "easy":
-   nombreDeCoup = 10
+    nombreSaisi = 10
 elif choix == "medium":
-    nombreDeCoup = 5
+    nombreSaisi = 5
 else:
-    nombreDeCoup = 3
-print("Vous avez le droit à",nombreDeCoup)
+    nombreSaisi = 3
+print("Vous avez le droit à", nombreSaisi)
 """
 détermine le nombre d'essai en fonction du choix user
 """
@@ -32,16 +32,16 @@ Jeu trouve le chiffre
 """
 while True:
     nombre = int(input("Devine le chiffre\n"))
-    print("Il reste", nombreDeCoup - i,"coup(s)")
-    if nombre == n or nombre != n:
+    print("Il reste", nombreSaisi - i, "coup(s)")
+    if nombre == nombreADeviner:
         print("Essai",i)
-        if nombreDeCoup == i:
+        if nombreSaisi == i:
             print("Tu as perdu")
             break
-    if nombre == n:
+    if nombre == nombreADeviner:
         print("Tu as gagné")
         break
-    elif nombre > n:
+    elif nombre > nombreADeviner:
         print("Tu es au dessus de la vérité.")
     else:
         print("Tu es trop bas")
