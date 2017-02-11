@@ -18,10 +18,6 @@ while True:#boucle afin d'être sûr de choisir un niveau = à 1, 2 ou 3
     level = (input("Veuillez choisir le niveau de difficulté easy, medium ou hard\n"))  # choix du niveau de difficulté
     if level == "easy":
         level = 10
-    elif level == "medium":
-        level = 5
-    else level == "hard":
-        level = 3
     break
 print(level)
 """
