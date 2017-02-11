@@ -35,8 +35,8 @@ while True:
     if nombre == n or nombre != n:
         print("Essai",i)
         if nombreDeCoup == i:
-        print("Tu as perdu")
-        break
+            print("Tu as perdu")
+            break
     if nombre == n:
         print("Tu as gagné")
         break
