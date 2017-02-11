@@ -24,6 +24,17 @@ while True:#boucle afin d'être sûr de choisir un niveau = à 1, 2 ou 3
 """
 détermine le nombre d'essai en fonction du choix user
 """
+while level == 1:
+    level = 10
+    print(level)
+
+"""while level == 2:
+    level == 5
+    print(level)
+
+while level == 1:
+    level *= 10
+    print(level)"""
 
 while True:
     nombre = int(input("Devine le chiffre\n"))
