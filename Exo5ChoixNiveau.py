@@ -20,13 +20,17 @@ while True:
 if choix == "easy" or choix == "medium" or choix == "hard":
     if choix == "easy":
         nombreEssaiMax = 10
+        break
     elif choix == "medium":
         nombreEssaiMax = 5
+        break
     else:
         nombreEssaiMax = 3
-    print("Vous avez le droit à", nombreEssaiMax)
+        print("Vous avez le droit à", nombreEssaiMax)
+    break
 else:
     print("Vous avez rentré une mauvaise valeur")
+    break
 
 """
 Jeu trouve le chiffre
