@@ -32,6 +32,7 @@ Jeu trouve le chiffre
 """
 while True:
     nombre = int(input("Devine le chiffre\n"))
+    print("Il reste", nombreDeCoup - i,"coup(s)")
     if nombre == n or nombre != n:
         print("Essai",i)
         if nombreDeCoup == i:
