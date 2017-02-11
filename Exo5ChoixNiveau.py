@@ -15,8 +15,8 @@ Jeu ou il faut trouver le bon nombre qui a été généré par hasard
 i = 0#variable pour l'affichage du nbre d'essai
 
 
-choix = (input("Veuillez choisir le niveau de difficulté easy, medium ou hard\n"))  # choix du niveau de difficulté
 while True:
+    choix = (input("Veuillez choisir le niveau de difficulté easy, medium ou hard\n"))  # choix du niveau de difficulté
     if choix == "easy":
         nombreEssaiMax = 10
         break
@@ -25,10 +25,9 @@ while True:
         break
     elif choix == "hard":
         nombreEssaiMax = 3
-        print("Vous avez le droit à", nombreEssaiMax)
         break
     else:
-    print("Vous avez rentré une mauvaise valeur")
+        print("Vous avez rentré une mauvaise valeur")
 
 """
 Jeu trouve le chiffre
