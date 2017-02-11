@@ -20,11 +20,10 @@ while True:#boucle afin d'être sûr de choisir un niveau = à easy, medium ou h
         level = 10
     elif level == "medium":
         level = 5
-    else level == "hard":
+    else:
         level = 3
     break
 print(level)
-
 
 """
 détermine le nombre d'essai en fonction du choix user
