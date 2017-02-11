@@ -26,15 +26,10 @@ else:
 print("Vous avez le droit à", nombreEssaiMax)
 
 """
-détermine le nombre d'essai en fonction du choix user
-"""
-
-"""
 Jeu trouve le chiffre
 """
 while True:
     nombre = int(input("Devine le chiffre\n"))
-    print("Il te reste", nombreEssaiMax - i, "coup(s)","sur",nombreEssaiMax)
     if nombre == nombreADeviner:
         print("Tu as gagné")
         break
@@ -46,3 +41,4 @@ while True:
     if nombreEssaiMax == i:
         print("Tu as perdu")
         break
+    print("Il te reste", nombreEssaiMax - i, "coup(s)", "sur", nombreEssaiMax)
