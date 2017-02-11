@@ -23,9 +23,13 @@ elif level == "medium":
 else:
    level = 3
 
-
 """
 détermine le nombre d'essai en fonction du choix user
+"""
+
+
+"""
+Jeu trouve le chiffre
 """
 while True:
     nombre = int(input("Devine le chiffre\n"))
