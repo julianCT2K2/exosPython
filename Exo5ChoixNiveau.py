@@ -16,6 +16,7 @@ i = 0#variable pour l'affichage du nbre d'essai
 
 
 choix = (input("Veuillez choisir le niveau de difficulté easy, medium ou hard\n"))  # choix du niveau de difficulté
+while True:
 if choix == "easy" or choix == "medium" or choix == "hard":
     if choix == "easy":
         nombreEssaiMax = 10
