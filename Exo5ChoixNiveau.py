@@ -34,7 +34,7 @@ while True:
     nombre = int(input("Devine le chiffre\n"))
     if nombre == n or nombre != n:
         print("Essai",i)
-        if nombreDeCoup == i
+        if nombreDeCoup == i:
         print("Tu as perdu")
         break
     if nombre == n:
