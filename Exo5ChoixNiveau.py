@@ -12,7 +12,7 @@ nombreADeviner = random.randint(1, 50)
 """
 Jeu ou il faut trouver le bon nombre qui a été généré par hasard
 """
-i = 1#variable pour l'affichage du nbre d'essai
+i = 0#variable pour l'affichage du nbre d'essai
 
 
 choix = (input("Veuillez choisir le niveau de difficulté easy, medium ou hard\n"))  # choix du niveau de difficulté
