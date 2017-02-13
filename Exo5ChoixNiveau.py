@@ -10,13 +10,25 @@ import random
 nombreADeviner = random.randint(1, 50)
 
 """
-Jeu ou il faut trouver le bon nombre qui a été généré par hasard
+Fonction choix user
 """
-i = 0#variable pour l'affichage du nbre d'essai
-
+def choix_User():
+    while True:
+        choix = input("Veuillez choisir le niveau de difficulté easy, medium ou hard\n")
+        if choix == "easy":
+            nombreEssaiMax = 10
+            break
+        elif choix =="medium":
+            nombreEssaiMax = 5
+            break
+        elif choix =="hard":
+            nombreEssaiMax = 3
+            break
+        else:
+            print("Vous avez rentré un mauvais choix")
 
 while True:
-    choix = (input("Veuillez choisir le niveau de difficulté easy, medium ou hard\n"))  # choix du niveau de difficulté
+    choix = input("Veuillez choisir le niveau de difficulté easy, medium ou hard\n")  # choix du niveau de difficulté
     if choix == "easy":
         nombreEssaiMax = 10
         break
@@ -28,10 +40,13 @@ while True:
         break
     else:
         print("Vous avez rentré une mauvaise valeur")
+
 print("Vous avez droit à",nombreEssaiMax,"coups")
 """
 Jeu trouve le chiffre
 """
+
+i = 0#variable pour l'affichage du nbre d'essai
 while True:
     nombre = int(input("Devine le chiffre\n"))
     if nombre == nombreADeviner:
