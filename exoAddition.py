@@ -1,7 +1,7 @@
 def addition(nb):
     i = 0
     while i < 100:
-        print(i + 1,"*",nb,"=",(i + 1) * nb)
+        print(nb,"*",i + 1,"=",(i + 1) * nb)
         i += 1
 
-print(addition(1))
+print(addition(10))
