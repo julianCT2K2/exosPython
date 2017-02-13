@@ -1,7 +1,7 @@
-def addition(nb):
+def addition(nb,nb2):
     i = 0
     while i < 100:
-        print(nb,"*",i + 1,"=",nb * (i + 1))
+        print(nb,"+",nb2,"=",nb + nb2)
         i += 1
 
-print(addition(int(input("Entrez un chiffre\n"))))
+print(addition(1,1))
