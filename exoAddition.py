@@ -4,4 +4,4 @@ def addition(nb):
         print(nb,"*",i + 1,"=",(i + 1) * nb)
         i += 1
 
-print(addition(10))
+print(addition(int(input("Entrez un chiffre\n"))))
